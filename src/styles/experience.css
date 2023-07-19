@@ -1,0 +1,45 @@
+@import "../fonts/fonts.css";
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 25px 0 25px 0;
+    width: 80%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    font-family: "NotoSerif";
+    font-weight: 800;
+
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+    color:white;
+  }
+  
+  .content {
+    padding: 0 0px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+
+  }
+
+  p {
+    text-align: center;
+    font-family: "NotoSerif";
+    font-size: 16px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height:18px;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "NotoSerif";
+    font-size: 30px;
+  }

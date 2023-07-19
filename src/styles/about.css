@@ -1,0 +1,16 @@
+@import "../fonts/fonts.css";
+
+div.box {
+    text-align:center;
+    display: inline-block;
+    max-width:70%;
+    margin: 0px 55px 0 55px;
+    padding: 10px;
+    font-family: "NotoSerif";
+    line-height: 19px;
+    font-size: 16px;
+}
+
+div.container {
+    text-align: center;
+}

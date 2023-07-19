@@ -1,0 +1,28 @@
+@import "../fonts/fonts.css";
+
+
+.photoContainer {
+    padding: 1% 5% 0  0px;
+    text-align: right;
+  }
+  
+  .photo {
+    max-width: 90%;
+    min-width: 250px;
+    height: auto;
+  }
+  
+  .textContainer {
+    text-align: left;
+  }
+
+.totalcontainer {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.6vw;
+    line-height: 5vw;
+    font-family: "NotoSerif";
+}
