@@ -1,20 +1,41 @@
 import CollapsibleButton from "../Collapsible";
+import { useState } from "react";
 import "../styles/experience.css";
-
 export default function Experience() {
+  const [activeCollapsible, setActiveCollapsible] = useState<string | null>(
+    null
+  );
+
+  const handleToggleCollapsible = (title: string) => {
+    setActiveCollapsible((prevTitle) => (prevTitle === title ? null : title));
+  };
+
   return (
     <>
-      <hr></hr>
-      <h1> Work Experience</h1>
+      <hr />
+      <h1>Work Experience</h1>
       <div>
-        <CollapsibleButton title="Petroineos - Risk Analyst">
+        <CollapsibleButton
+          title="Petroineos - Risk Analyst"
+          onToggle={handleToggleCollapsible}
+          activeCollapsible={activeCollapsible}
+        >
           <p>
             I currently work as a Product Controller at Petroineos, a
-            commodities trading firm.
+            commodities trading firm based in London. I fall under the risk
+            department and am responsible for accurately reporting on trading
+            PnL and assessing the overall health of active positions relative to
+            trading limits. My role involves python programming and excel skills
+            and during my time I taught myself VBA for automating my work flow
+            and report production.
           </p>
         </CollapsibleButton>
 
-        <CollapsibleButton title="Mirage Technology Ltd - Founder">
+        <CollapsibleButton
+          title="Mirage Technology Ltd - Founder"
+          onToggle={handleToggleCollapsible}
+          activeCollapsible={activeCollapsible}
+        >
           <p>
             Founder of my own augmented reality mobile app startup and worked in
             my own time managing the team and its operations using agile
@@ -25,7 +46,12 @@ export default function Experience() {
             everything I do.
           </p>
         </CollapsibleButton>
-        <CollapsibleButton title="Guinness Ventures - Data Intern">
+
+        <CollapsibleButton
+          title="Guinness Ventures - Data Intern"
+          onToggle={handleToggleCollapsible}
+          activeCollapsible={activeCollapsible}
+        >
           <p>
             I undertook two internships at Guinness where I worked closely with
             the investment teams to review and construct the architecture for a
@@ -34,7 +60,12 @@ export default function Experience() {
             communication, data storage.
           </p>
         </CollapsibleButton>
-        <CollapsibleButton title="Affinity Shipping - Data Scientist">
+
+        <CollapsibleButton
+          title="Affinity Shipping - Data Scientist"
+          onToggle={handleToggleCollapsible}
+          activeCollapsible={activeCollapsible}
+        >
           <p>
             A client facing role in which I built upon existing financial models
             using Python and Microsoft Excel and conducted multi-variate
